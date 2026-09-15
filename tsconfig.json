@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "target": "ES2022",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@arcanetech/privacy-sdk-core/state": [
+        "node_modules/@arcanetech/privacy-sdk-core/dist/state/index.d.ts"
+      ],
+      "@arcanetech/privacy-sdk-stellar/node": [
+        "node_modules/@arcanetech/privacy-sdk-stellar/dist/node.d.ts"
+      ],
+      "@arcanetech/privacy-sdk-stellar/transact": [
+        "node_modules/@arcanetech/privacy-sdk-stellar/dist/transact/index.d.ts"
+      ]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}
