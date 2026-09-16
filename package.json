@@ -17,7 +17,7 @@
     "@arcanetech/privacy-sdk-core": "0.3.0",
     "@arcanetech/privacy-sdk-relay": "^0.2.2",
     "@arcanetech/privacy-sdk-state-memory": "0.2.2",
-    "@arcanetech/privacy-sdk-stellar": "0.5.1",
+    "@arcanetech/privacy-sdk-stellar": "0.5.2",
     "@arcanetech/stellar-privacy-pool-zk-sdk": "^0.10.1-rc.2",
     "@nestjs/common": "^11.1.3",
     "@nestjs/config": "^4.0.2",
@@ -27,11 +27,11 @@
     "@nestjs/typeorm": "^11.0.0",
     "@scure/bip39": "^1.6.0",
     "@stellar/stellar-sdk": "^16.0.1",
+    "dotenv": "^16.4.7",
     "ed25519-hd-key": "^1.3.0",
     "pg": "^8.16.3",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
-    "dotenv": "^16.4.7",
     "typeorm": "^0.3.26"
   },
   "devDependencies": {
