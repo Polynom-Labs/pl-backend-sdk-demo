@@ -38,6 +38,7 @@ const entities = [
       url: env.databaseUrl,
       entities,
       synchronize: true,
+      ...(env.databaseCA ? { ssl: { ca: env.databaseCA } } : {}),
     }),
     TypeOrmModule.forFeature(entities),
     ServeStaticModule.forRoot({

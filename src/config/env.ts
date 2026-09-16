@@ -55,6 +55,7 @@ export type DemoEnv = {
   tokenContract: string;
   assetName: string;
   assetDecimals: number;
+  databaseCA: string | undefined;
 };
 
 export function loadDemoEnv(): DemoEnv {
@@ -105,5 +106,6 @@ export function loadDemoEnv(): DemoEnv {
     ),
     assetName: optionalEnv("ASSET_NAME", "Stellar"),
     assetDecimals: Number.parseInt(optionalEnv("ASSET_DECIMALS", "7"), 10),
+    databaseCA: optionalNonEmptyEnv("DATABASE_CA"),
   };
 }

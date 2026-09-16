@@ -20,6 +20,7 @@ export async function createWorkerDataSource(
     url: env.databaseUrl,
     entities: workerEntities,
     synchronize: false,
+    ...(env.databaseCA ? { ssl: { ca: env.databaseCA } } : {}),
   });
   await dataSource.initialize();
   return dataSource;
